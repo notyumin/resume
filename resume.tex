@@ -1,0 +1,153 @@
+\documentclass[a4paper]{article}
+    \usepackage{fullpage}
+    \usepackage{amsmath}
+    \usepackage{amssymb}
+    \usepackage{textcomp}
+    \usepackage[utf8]{inputenc}
+    \usepackage[T1]{fontenc}
+    \textheight=10in
+    \pagestyle{empty}
+    \raggedright
+    \usepackage[left=0.8in,right=0.8in,bottom=0.8in,top=0.8in]{geometry}
+
+    %\renewcommand{\encodingdefault}{cg}
+%\renewcommand{\rmdefault}{lgrcmr}
+
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+
+% DEFINITIONS FOR RESUME %%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\area} [2] {
+    \vspace*{-9pt}
+    \begin{verse}
+        \textbf{#1}   #2
+    \end{verse}
+}
+
+\newcommand{\lineunder} {
+    \vspace*{-8pt} \\
+    \hspace*{-18pt} \hrulefill \\
+}
+
+\newcommand{\header} [1] {
+    {\hspace*{-18pt}\vspace*{6pt} \textsc{#1}}
+    \vspace*{-6pt} \lineunder
+}
+
+\newcommand{\employer} [3] {
+    { \textbf{#1} (#2)\\ \underline{\textbf{\emph{#3}}}\\  }
+}
+
+\newcommand{\contact} [3] {
+    \vspace*{-10pt}
+    \begin{center}
+        {\Huge \scshape {#1}}\\
+        #2 \\ #3
+    \end{center}
+    \vspace*{-8pt}
+}
+
+\newenvironment{achievements}{
+    \begin{list}
+        {$\bullet$}{\topsep 0pt \itemsep -2pt}}{\vspace*{4pt}
+    \end{list}
+}
+
+\newcommand{\schoolwithcourses} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+    \vspace*{5pt}
+}
+
+\newcommand{\school} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+}
+% END RESUME DEFINITIONS %%%%%%%%%%%%%%%%%%%%%%%
+
+    \begin{document}
+\vspace*{-40pt}
+
+
+
+%==== Profile ====%
+\vspace*{-10pt}
+\begin{center}
+	{\Huge \scshape {Tan Yu Min}}\\
+	Singapore $\cdot$ notyumin@gmail.com $\cdot$ (+65) 8499 6129 $\cdot$ github.com/notyumin\\
+\end{center}
+
+%==== Education ====%
+\header{Education}
+\textbf{Singapore University of Technology and Design}\hfill Singapore\\
+BEng. Computer Science \hfill 2024 - 2028\\
+\vspace{2mm}
+\textbf{School of InfoComm Technology - Ngee Ann Polytechnic}\hfill Singapore\\
+Diploma in Information Technology \textit{GPA: 3.73} \hfill 2019 - 2022\\
+\vspace{2mm}
+\textbf{School of Science and Technology, Singapore}\hfill Singapore\\
+O\textquotesingle Levels \hfill 2015 - 2018\\
+\vspace{2mm}
+
+%==== Experience ====%
+\header{Work Experience}
+\vspace{1mm}
+
+\textbf{Sign Pte Ltd} \hfill Singapore\\
+\textit{Software Engineer Intern} \hfill March 2021 - August 2021\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Worked on both frontend (Elm) and backend (Node.js with Typescript) to add features and improve UI/UX of the Sign.net web app, such as adding Loading Skeletons, Email Confirmation to delete documents, Redirect on Login, and more.
+	\item Deployed internal server that fetches application activity and summarises them into Daily Reports for the sales team.
+	\item Created and maintained internal documentation using Markdown, and public documentation using Gitbook.
+\end{itemize}
+\textbf{Sign Pte Ltd} \hfill Singapore\\
+\textit{Intern} \hfill September 2020 - October 2020\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Designed and coded email templates for app.sign.net\textquotesingle{}s email notifications using MJML
+	\item Designed and captioned visuals using Canva for social media to update users with Sign.net news
+	\item Composed blog posts for www.sign.net to educate users on Sign.net\textquotesingle{}s features
+	\item Created PowerPoint presentations for use at TechCrunch Disrupt 2020
+\end{itemize}
+\textbf{Tezos Southeast Asia} \hfill Singapore\\
+\textit{Intern} \hfill September 2019 - June 2020\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Contributed to a web application using React.js, Node.js and Cloud Firestore
+	\item Stock-taking using Google Sheets
+	\item Researching and purchasing equipment
+\end{itemize}
+
+\header{Academic Projects}
+{\textbf{ROOT Website}} {\sl Nextjs, Supabase} \hfill root.sutd.edu.sg\\
+Maintained and added features to the SUTD ROOT website, such as Locker Booking, Login Portal and Migration to Supabase\\
+\vspace*{2mm}
+{\textbf{Connect 345}} {\sl FPGA} \\
+Built an Arcade Game using the Alchitry Au FPGA board. Learnt a lot about low level programming and the inner workings of computer architecture.
+\vspace*{2mm}
+
+\header{Personal Projects}
+{\textbf{CIS Youth Hymnal}} {\sl Hugo, HTML, CSS, Javascript} \hfill github.com/church-sg/cis-youth-hymnal-v2\\
+A PWA for church members to refer to hymn lyrics during worship\\
+\vspace*{2mm}
+{\textbf{Scripts For Fun}} {\sl Golang, Python} \hfill https://github.com/notyumin/scripts-for-fun/\\
+A repository of scripts I wrote for fun and for learning. Highlights include a TUI Connect-4 game written in Golang, and a Countdown Game solver written in Python.\\
+\vspace*{2mm}
+{\textbf{Dotfiles}} \hfill https://github.com/notyumin/dotfiles/\\
+All my different config files, such as for Neovim, Tmux, Wezterm and more. Managed by GNU Stow.\\
+\vspace*{2mm}
+
+\header{Additional Information}
+\begin{tabular}{ l l }
+	Front-end Development: & HTML, CSS, Javascript, Elm, ASP.NET \\
+	Back-end Development:  & Typescript, Node.js, Golang, SQL    \\
+	Misc Languages:        & Python, C++, C\#, Bash              \\
+	Interests:             & Basketball, Keyboards, Coffee       \\
+\end{tabular}
+\vspace{2mm}
+
+
+
+\ 
+\end{document}
