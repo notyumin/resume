@@ -8,7 +8,7 @@
     \textheight=10in
     \pagestyle{empty}
     \raggedright
-    \usepackage[left=0.8in,right=0.8in,bottom=0.8in,top=0.8in]{geometry}
+    \usepackage[left=0.75in,right=0.75in,bottom=0.75in,top=0.75in]{geometry}
 
     %\renewcommand{\encodingdefault}{cg}
 %\renewcommand{\rmdefault}{lgrcmr}
@@ -77,66 +77,135 @@
 	Singapore $\cdot$ notyumin@gmail.com $\cdot$ (+65) 8499 6129 $\cdot$ notyumin.github.io\\
 \end{center}
 
-%==== Education ====%
-\header{Education}
-\textbf{Singapore University of Technology and Design}\hfill Singapore\\
-BEng. Computer Science \textit{GPA: 4.59} \hfill 2024 - 2028\\
+\header{Professional Summary}
 \vspace{2mm}
-\textbf{School of InfoComm Technology - Ngee Ann Polytechnic}\hfill Singapore\\
-Diploma in Information Technology \textit{GPA: 3.73} \hfill 2019 - 2022\\
-\vspace{2mm}
-\textbf{School of Science and Technology, Singapore}\hfill Singapore\\
-O-Levels \hfill 2015 - 2018\\
+Computer Science undergraduate at the Singapore University of Technology and Design with experience building full-stack web applications using React, Typescript, Go, and modern web technologies. 
+Experienced in leading student engineer teams, developing production software, and building developer-focused tooling with an interest in scalable systems and developer experience.
+\vspace{4mm}
+
+%==== Skills ====%
+\header{Core Skills}
+\vspace{-1mm}
+\begin{itemize} \itemsep 0pt
+    \item Languages: Javascript/TypeScript, Go, C++, C\#, Python, Java, SQL
+    \item Full-stack: Next.js, ASP.NET
+    \item Frontend: React, HTML, CSS, Elm
+    \item Backend: Express, Gorilla Mux
+    \item Infrastructure: Docker, Linux, Git, AWS, Supabase, Vercel
+    \item Test Frameworks: Jest, Vitest
+    \item Other Interests: Basketball, Keyboards, Coffee
+\end{itemize}
 \vspace{2mm}
 
 %==== Experience ====%
-\header{Work Experience}
+\header{Professional Experience}
 \vspace{1mm}
 
 \textbf{Sign Pte Ltd} \hfill Singapore\\
 \textit{Software Engineer Intern} \hfill March 2021 - August 2021\\
 \vspace{-1mm}
-\begin{itemize} \itemsep 0.5pt
-  \item Worked with a Linux developer environment, using the CLI to install packages to set up the dev environment, and editing files using Vim. 
+\begin{itemize} \itemsep 0.3pt
+  \item Worked with a Linux development environment, using the CLI to install packages to set up the dev environment, and editing files using Vim.
 	\item Gathered and clarified requirements from superiors to ensure that features implemented met the user and business needs.
 	\item On the frontend:
-    \item Implemented features on Elm frontend, using functional programming paradigms like recursion and higher order functions. 
-    \item Implemented user-friendly UI, ensuring adequate margins/padding, responsive layouts, as well as a design consistent with the rest of the application
-    \item Implemented new UX features such as loading skeletons to improve user perceived load times
-	\item On the backend, wrote or updated RESTful API endpoints using Express with Typescript to complement the frontend features. Also had to write and run the respective passing and failing unit tests to ensure proper API functionality before deployment. 
-  \item Went through strict code review sessions with my supervisors to ensure clean and maintainable code before code was deployed. Learnt a lot about the practical application of clean code practices, such as SOLID, YAGNI, KISS, etc.
+  \vspace{-2mm}
+  \begin{itemize} \itemsep 0.2pt
+    \item Implemented features on Elm frontend, using functional programming paradigms like recursion and higher order functions.
+    \item Implemented responsive UI, ensuring adequate margins/padding, responsive layouts, as well as a design consistent with the rest of the application for various viewports.
+    \item Implemented new UX features such as loading skeletons to improve perceived application responsiveness.
+  \end{itemize}
+	\item On the backend:
+  \vspace{-2mm}
+  \begin{itemize} \itemsep 0.2pt
+    \item Wrote and updated RESTful API endpoints using Express
+    \item Developed passing and failing Jest unit tests to ensure proper API functionality before deployment.
+  \end{itemize}
+  \item Passed strict code review sessions with supervisors before deployment, ensuring principles such as SRP, YAGNI and KISS were upheld to the team's standards.
 \end{itemize}
 
 \header{Academic Projects}
-{\textbf{ROOT Student Government}} \hfill root.sutd.edu.sg\\
-\textit{Secretary of ROOTech} \hfill Mar 2026 - Present\\
+{\textbf{SUTD ROOT Student Government}} \hfill root.sutd.edu.sg\\
+\textit{Technical Lead / Secretary of ROOTech} \hfill Mar 2026 - Present\\
 \vspace{-1mm}
 \begin{itemize} \itemsep 0.5pt
-    \item Currently, leading a team of 10 ROOTies to maintain and add features to the ROOT website using Next.js and Supabase.
-    \item Liaise with key stakeholders like the ROOT Cabinet or School Offices to gather user/business requirements. Then, plan and assign tasks to ROOTies, assist with any blockages during their development process, and lastly, review and merge their code into production.
-    \item Review current workflows and research new tools or methods that can improve our Developer Experience or reduce costs, e.g. migrating env vars to SOPS, moving backend from DigitalOcean to Supabase, etc.
-    \item Wrote new documentation and cleaned up old documentation to facilitate the onboarding process for ROOTies.
+    \item Currently leading a team of 10 developers to build and maintain internal and external applications for ROOT Student Government and the general student population respectively.
+    \item Liaise with key stakeholders such as ROOT Cabinet and School Offices to gather user/business requirements.
+    \item Plan and assign tasks to developers, and assist with any blockages during development process.
+    \item Review and merge developers' code into production, and request changes if necessary.
+    \item Improved developer workflows and reduced infrastructure costs by evaluating and introducing tools such as SOPS for secret management and migrating backend services from DigitalOcean to Supabase.
+    \item Wrote new documentation and cleaned up old documentation to facilitate the onboarding process for new developers.
+\end{itemize}
+% \vspace*{2mm}
+\clearpage
+{\textbf{ETI Microservice Assignment}} {\sl Docker, Docker Compose, SSH, PuTTY, Microservices} \\
+\begin{itemize} \itemsep 0.5pt
+    \item Built the ClassExchange Microservice and Microfrontend as part of a network of 20+ microservices
+    \item Liaised with developers of Class and Authentication Microservices and consumed their APIs to allow for class exchange functionality.
+    \item Built Backend RESTful API with Go and Gorilla Mux, and used MySQL to store class exchange data.
+    \item Containerised Applications with Docker, and used Docker Compose to orchestrate the microservices, allowing for easy deployment and testing.
+    \item Used SSH and PuTTY to connect to the remote server, and successfully deployed the microservices onto the server for testing.
 \end{itemize}
 \vspace*{2mm}
+{\textbf{LeafMeBe}} {\sl ESP32 Microcontroller, Arduino, C++} \\
+\vspace{-1mm}
+\begin{itemize} \itemsep 0.5pt
+    \item Developed automatic plant-watering system using an ESP32 microcontroller and Arduino ESP Core.
+    \item Interfaced moisture sensors and water pumps via GPIO control to automate watering cycles and eliminate manual watering
+    \item Awarded \textbf{Top in Cohort for Innovation and Risk-Taking}
+\end{itemize}
 
 \header{Personal Projects}
 {\textbf{CIS Youth Hymnal}} {\sl Hugo, HTML, CSS, Javascript} \hfill github.com/church-sg/cis-youth-hymnal-v2\\
-A PWA for church members to refer to hymn lyrics. Built using Hugo SSG for fast, static page loads, along with Service Workers to add offline capability.
-Also wrote a Bash script for 1-click deployment onto Github Pages.\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 0.5pt
+    \item Open-source Progressive Web App used by 50+ church members to browse hymn lyrics with offline support.
+    \item Built with Hugo SSG and served by GitHub Pages for fast static page loads, while Service Workers provide offline functionality.
+    \item Wrote custom JavaScript and CSS to enable features not built into Hugo, e.g.
+      \vspace{-2mm}
+      \begin{itemize} \itemsep 0.2pt
+        \item Implemented custom navigation with HTMX, allowing for seamless navigation between pages by replacing full-page browser reloads with partial DOM updates.
+        \item Large "previous" and "next" buttons for ergonomic browsing on mobile
+        \item Auto-scrolling to prior location upon returning to list view to reduce repetitive scrolling
+        \item Page Indexing powered by Lunr to allow for searching both title and content, increasing search accuracy and speed.
+      \end{itemize}
+    \item Wrote a Bash script for a 1-click build-and-deploy onto GitHub Pages
+    \item Wrote documentation to onboard new developers quickly to add new hymns using Markdown.
+\end{itemize}
 \vspace*{2mm}
-{\textbf{Dotfiles}} \hfill https://github.com/notyumin/dotfiles/\\
-All my different config files, for Neovim, Tmux, Wezterm and more. Managed by GNU Stow.\\
+{\textbf{Dotfiles}} {\sl Bash, Lua} \hfill https://github.com/notyumin/dotfiles/\\
+
+\vspace{-1mm}
+\begin{itemize} \itemsep 0.5pt
+\item Personal Linux development environment managed with GNU Stow, including:
+\vspace{-2mm}
+  \begin{itemize} \itemsep 0.2pt
+      \item \textit{GNU Stow}: Allows 1-command symlink of all config files to the right locations, enabling quick, reproducible workstation setup
+      \item \textit{Neovim}: Built on the MiniMax distro, with custom keybindings and plugins to improve productivity and ergonomics
+      \item \textit{Tmux}: Custom keybindings and minimal status bar
+      \item \textit{Wezterm}: Custom colourscheme and UI tweaks
+  \end{itemize}
+\end{itemize}
 \vspace*{2mm}
 
-\header{Additional Information}
-\begin{tabular}{ l l }
-	Front-end Development: & HTML, CSS, Javascript, Elm, Next.js, React, ASP.NET \\
-	Back-end Development:  & Typescript, Node.js, Golang, SQL                    \\
-  Sys Admin:             & Linux, Bash, Git, Docker                            \\
-	Other Languages:       & Python, C++, C\#                                    \\
-	Interests:             & Basketball, Keyboards, Coffee                       \\
-\end{tabular}
+%==== Education ====%
+\header{Education}
+\textbf{Singapore University of Technology and Design}\hfill Singapore\\
+BEng. Computer Science \textit{GPA: 4.59/5} \hfill 2024 - 2028\\
 \vspace{2mm}
+\textbf{School of InfoComm Technology - Ngee Ann Polytechnic}\hfill Singapore\\
+Diploma in Information Technology \textit{GPA: 3.73/4} \hfill 2019 - 2022\\
+\vspace{2mm}
+\textbf{School of Science and Technology, Singapore}\hfill Singapore\\
+O-Levels \hfill 2015 - 2018\\
+\vspace{4mm}
+
+\header{Awards}
+\vspace{-2mm}
+\begin{itemize} \itemsep 0.5pt
+    \item SUTD Freshmore Honours List (2024/2025)
+    \item LeafMeBe: Top in Cohort for Innovativeness and Risk-taking (2025)
+\end{itemize}
+\vspace*{2mm}
 
 \
 \end{document}
